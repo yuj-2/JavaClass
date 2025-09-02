@@ -1,0 +1,122 @@
+1.아래 실행 결과를 보고 코딩하세요.
+	실행결과)
+   01 - 헬로우 월드  
+   02 - 헬로우 월드  
+   03 - 헬로우 월드  
+   04 - 헬로우 월드  
+   05 - 헬로우 월드  
+   06 - 헬로우 월드  
+   07 - 헬로우 월드  
+   08 - 헬로우 월드  
+   09 - 헬로우 월드  
+   10 - 헬로우 월드
+   		String str = "헬로우 월드";
+		for (int i = 1; i < 11; i++) {
+			if(i==10) {
+				System.out.printf("%d - %s",i,str);
+				break;
+			}//if
+			System.out.printf("0%d - %s\n",i,str);
+		}//for
+   
+2.    
+ 
+ 		//1)1~10까지의 홀수의 합을 출력하는 코딩을 하세요 ( for문 사용 ) 
+//		int sum = 0;
+//		for (int i = 1; i < 10; i+=2) {
+//			System.out.printf("%d+",i);
+//			sum+=i;
+//		}//for
+//		System.out.printf("\b=%d",sum);		
+		
+		
+		//2)1~10까지의 짝수의 합을 출력하는 코딩을 하세요 ( while문 사용 ) 
+//		int i=0, sum =0;
+//		while (i++<=10) {
+//			if(i%2==1)continue;
+//			System.out.printf("%d+",i);
+//			sum+=i;
+//		}//while
+//		System.out.printf("\b=%d",sum);
+		
+		//3)국어점수를 입력받아서 수우미양가 출력( if문 사용 )
+//		int score;
+//		char grade='가';
+//
+//		System.out.print("국어 점수 입력 : ");
+//		@SuppressWarnings("resource")
+//		Scanner scanner = new Scanner(System.in);
+//		if(!scanner.hasNextInt()) {
+//			System.out.println("잘못된 입력입니다");
+//			return ;
+//		
+//		score = scanner.nextInt();
+//		}
+//		if(0 <= score && score <= 100) {
+//			if (score >= 90) grade='수';
+//			else if (score >= 80) grade='우';
+//			else if ( score >= 70) grade='미';
+//			else if (score >= 60) grade='양';
+//			else grade='가';
+//			System.out.printf("%d점은 '%c'입니다.",score, grade);
+//		}//if
+//		else {
+//			System.out.println("잘못된 입력입니다/");
+//		}
+		
+		//4) 국어점수를 입력받아서 수우미양가 출력( switch문 사용 )
+		int score;
+		char grade='가';
+
+		@SuppressWarnings("resource")
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("국어 점수 입력 : ");
+		if(!scanner.hasNextInt()) {
+			System.out.println("잘못된 입력입니다");
+			return ;
+		}
+		
+		score = scanner.nextInt();
+		
+		switch (0 <= score && score <=100 ? 1:0) {
+		case 1:
+			switch (score / 10) {
+			case 10:
+			case 9:
+				grade='수';
+				break;
+			case 8:
+				grade='우';
+				break;
+			case 7:
+				grade='미';
+				break;
+			case 6:
+				grade='양';
+				break;
+			default:
+				grade='가';
+				break;
+			}//switch
+			System.out.printf("%d점은 '%c'입니다",score, grade);
+			break;
+		default:
+			System.out.println("잘못된 입력입니다.");
+			break;
+		}
+
+3. 0~100 사이의 임의의 정수를 출력하는 코딩
+ 1) Math.random() 사용
+ 				int j = 100;
+				System.out.println((int)(Math.random()*j)+1);				
+			
+ 2) Random 클래스 사용 
+ 	Random rdm = new Random();
+ 	System.out.println(rdm.nextInt(101));	
+ 
+
+6. 로또번호를 6개 출력하는 코딩.
+
+		for (int i = 1; i < 7; i++) {
+			System.out.println((int)(Math.random()*45)+1);	
+		}  

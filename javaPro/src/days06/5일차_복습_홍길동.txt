@@ -1,0 +1,151 @@
+1.아래 실행 결과를 보고 코딩하세요.
+	실행결과)
+   01 - 헬로우 월드  
+   02 - 헬로우 월드  
+   03 - 헬로우 월드  
+   04 - 헬로우 월드  
+   05 - 헬로우 월드  
+   06 - 헬로우 월드  
+   07 - 헬로우 월드  
+   08 - 헬로우 월드  
+   09 - 헬로우 월드  
+   10 - 헬로우 월드
+
+/*			
+		   01 - 헬로우 월드  
+		   02 - 헬로우 월드  
+		   03 - 헬로우 월드  
+		   04 - 헬로우 월드  
+		   05 - 헬로우 월드  
+		   06 - 헬로우 월드  
+		   07 - 헬로우 월드  
+		   08 - 헬로우 월드  
+		   09 - 헬로우 월드  
+		   10 - 헬로우 월드
+		 */
+
+		/*
+		System.out.println("01 - 헬로우 월드");
+		System.out.println("02 - 헬로우 월드");
+		System.out.println("03 - 헬로우 월드");
+		System.out.println("04 - 헬로우 월드");
+		System.out.println("05 - 헬로우 월드");
+		System.out.println("06 - 헬로우 월드");
+		System.out.println("07 - 헬로우 월드");
+		System.out.println("08 - 헬로우 월드");
+		System.out.println("09 - 헬로우 월드");
+		System.out.println("10 - 헬로우 월드");
+		 */
+
+		/*
+		for (int i = 1; i <= 10; i++) {
+			if (i==10) {
+				System.out.printf("%d - 헬로우 월드\n", i);
+			}else {
+				System.out.printf("0%d - 헬로우 월드\n", i);
+			}			
+		}
+		 */
+
+		for (int i = 1; i <= 10; i++) { 
+			System.out.printf("%02d - 헬로우 월드\n", i);  
+		}
+   
+2.    
+ 1) 1~10까지의 홀수의 합을 출력하는 코딩을 하세요 ( for문 사용 )  
+ int sum = 0;
+		// int i=1;		
+		for (  int i=1   ;  i<= 10  ; i+=2  ) {
+			System.out.printf("%d+", i);
+			sum += i;
+		}	
+		System.out.printf("\b=%d\n", sum);
+		// i cannot be resolved to a variable
+		// System.out.println(i);
+		
+		/*
+		int sum = 0;
+		int i = 1;
+		
+		for (  int j=1 , k=1, z=0   ;       ; j+=2, k-=5, z++  ) {
+			if( i > 10 ) break; // i <= 10
+			System.out.printf("%d+", i);
+			sum += i++;
+			//i++;
+		}
+		
+		System.out.printf("\b=%d", sum);
+		*/ 
+ 2) 1~10까지의 짝수의 합을 출력하는 코딩을 하세요 ( while문 사용 ) 
+ int i=1, sum=0;
+		while(i<=10) {
+			/*
+			if (i%2==1) {
+				i++;
+				continue;
+			} 
+			 */
+			if(i%2==0) {
+				System.out.printf("%d+", i);
+				sum += i;
+			}
+			
+			i++;
+		}
+		System.out.printf("\b=%d", sum);
+		//
+		int i=1, sum=0;
+		i += i%2==1 ? 1 : 0 ;		
+		while(i<=10) {  
+			System.out.printf("%d+", i);
+			sum += i; 
+			i+=2;
+		}
+		System.out.printf("\b=%d", sum);
+ 3) 국어점수를 입력받아서 수우미양가 출력( if문 사용 )        
+int kor = 89;
+		if (0<=kor && kor<=100  ) {
+			// 수~가 
+			if ( 90 <= kor ) {				
+			}else if (80 <= kor) {				
+			}else if (70 <= kor) {				
+			}else if (60 <= kor) {				
+			}else {
+			}
+		} else {
+			// 입력 잘못!!
+		}
+ 4) 국어점수를 입력받아서 수우미양가 출력( switch문 사용 )    
+int kor = 89;
+		switch (  0<=kor && kor<=100 ? 1 : 0 ) {
+		case 1:
+			switch (kor/10) {
+			case 10: case 9:
+				break;
+			case 8:
+				break;
+			case 7: 
+				break;
+			case 6:
+				break;
+			default:
+				break;
+			}
+			break;
+		default:
+			break;
+		}
+		
+3. 0~100 사이의 임의의 정수를 출력하는 코딩
+ 1) Math.random() 사용
+ 2) Random 클래스 사용 
+ 
+4. 로또번호를 6개 출력하는 코딩.
+
+
+
+
+
+
+
+  

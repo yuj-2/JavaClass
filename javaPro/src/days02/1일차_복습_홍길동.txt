@@ -1,0 +1,29 @@
+1. JDK / JRE / JVM 설명
+2. jdk 설치 확인 방법 2가지
+  1) 설치 폴더 확인   c:\\progam file\java\jdk-11  /17
+  2) cmd   >java -version
+3. 환경변수 설정
+  1)  작업표시줄 - 돋보기 입력 : 환경변수 엔터
+  2)  JAVA_HOME : c:\\progam file\java\jdk-11
+      Path      : %JAVA_HOME%\bin  맨 위로 이동
+4. 메모장 사용
+  1) JavaClass폴더 안에 Test.java 생성
+  2) 본인 이름 출력 코딩
+     조건)  이름을 저장할 변수를 선언하고
+           본인 이름으로 초기화 하고
+  3) cmd   컴파일하고    Test.class
+  4)       실행         홍길동  
+  
+C:\E\Class\SS24Class\JavaClass>javac -encoding UTF-8 Test.java
+C:\E\Class\SS24Class\JavaClass>java Test   
+
+
+
+
+
+
+
+
+
+
+         
