@@ -1,5 +1,7 @@
 package days14;
 
+import days15.Time;
+
 /**
  * @author kenik  
  * @date 2025. 9. 4. 오전 6:57:42 
@@ -12,13 +14,16 @@ public class Ex01 {
 	
 
 	public static void main(String[] args) {
-		
+		/*
 		// 지역변수
 		String name;  // 자동차이름
 		int speed;    // 속도
 		int wheelCount; // 바퀴수
+		*/
 
-
+		Time t = new Time();
+		t.hour = 10;
+//		t.minute = 1; //The field Time.minute [is not visible] -- 접근지정자 관련 에러
 	} // main
 
 } // class
