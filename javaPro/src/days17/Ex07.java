@@ -10,7 +10,7 @@ public class Ex07 {
 
 	public static void main(String[] args) {
 		// 1. Employee
-		Employee emp1 = new Employee("이나영", "서울시 강남구", "010-1234-1234", "2020.01.01");
+		//Employee emp1 = new Employee("이나영", "서울시 강남구", "010-1234-1234", "2020.01.01");
 		// 2. Regular
 		Employee emp2 =  new Regular("김수진", "서울시 당산동", "010-1272-2322", "2018.12.12", 3000000);	
 		// 3. Temp
@@ -18,7 +18,7 @@ public class Ex07 {
 		// 4. SalesMan
 		Employee emp4  =  new SalesMan("최현아", "경기도 수원", "010-8732-9877", "2015.03.15", 500000, 20, 100000);
 		
-		dispTest(emp1);
+		//dispTest(emp1);
 		dispTest(emp2);
 		dispTest(emp3);
 		dispTest(emp4);

@@ -2,7 +2,10 @@ package days17;
 
 // [사원클래스]
 // 사원이라면 "공통적으로 가지고 있는 멤버들을 선언"한 클래스.
-public class Employee extends Object{
+// 인스턴스를 생성할 수 없는 불완전한 클래스
+// 질문) 공통적인 멤버들만으로 이루어진 미리 선언된 클래스가 필요하다면 
+//      그 클래스는 추상클래스로 선언한다. 
+public abstract class Employee extends Object{
 
 	// 필드
 	private String name;  		// 사원명
@@ -56,8 +59,14 @@ public class Employee extends Object{
 		System.out.printf("사원명:%s, 주소:%s, 연락처:%s, 입사일자:%s\n"
 				, this.name, this.addr, this.tel, this.hiredate);
 	}
-
-
+	
+	// 가상메서드 -> 자식클래스 반드시 오버라이딩 사용
+//	public int getPay() {
+//		return 0;
+//	}
+	
+	// 몸체가 구현이 안된 불완전한 메서드 -> 추상메서드
+	public abstract int getPay() ;
 
 }
 
