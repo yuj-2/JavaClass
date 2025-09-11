@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<family>
+    <member>
+        <name>홍길동</name>
+        <age>45</age>
+        <relation>아버지</relation>
+        <gender>남</gender>
+    </member>
+    <member>
+        <name>김영희</name>
+        <age>42</age>
+        <relation>어머니</relation>
+        <gender>여</gender>
+    </member>
+    <member>
+        <name>홍철수</name>
+        <age>18</age>
+        <relation>아들</relation>
+        <gender>남</gender>
+    </member>
+    <member>
+        <name>홍민지</name>
+        <age>15</age>
+        <relation>딸</relation>
+        <gender>여</gender>
+    </member>
+</family>
