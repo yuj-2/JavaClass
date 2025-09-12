@@ -1,7 +1,7 @@
 package days15;
 
 // 좌표(x,y)를 다루는 속성, 기능이 구현된 클래스
-public class Point {
+public class Point implements Cloneable {
 
 	// 필드
 	public int x = 0;
@@ -22,6 +22,11 @@ public class Point {
 		System.out.println("> Constructor 2 호출됨...");
 		x = i;
 		y = j;
+	}
+
+	public Point(Point p) { // 참조형 매개변수
+		this.x = p.x;
+		this.y = p.y;
 	}
 
 	// 메소드
@@ -60,5 +65,36 @@ public class Point {
 	}
 
 
+
+	
+	//=====================================
+	//days20 - equals() 오버라이딩해서 x,y 좌표가 같으면 같다
+	
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof Point && obj != null) {
+			Point p = (Point)obj;
+			return (p.x == this.x) && (p.y == this.y);
+		}
+		return false;
+	}
+	
+	@Override
+	public String toString() {
+		return String.format("[x=%d, y=%d]",this.x,this.y);
+	}
+	
+	// 오버라이딩 조건
+	// jdk1.5~
+	//  "공변 반환 타입" 추가
+	// Object -> Point 변경할 수 있도록 했다
+	@Override
+	public Point clone() throws CloneNotSupportedException {
+		Point obj = null;
+		obj = (Point) super.clone(); 
+		return obj;
+	}
+	
+	
 
 }

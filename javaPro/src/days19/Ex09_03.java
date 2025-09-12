@@ -14,7 +14,7 @@ public class Ex09_03 {
 
 	public static void main(String[] args) {
 	 
-		String fileName = "C:\\E\\Class\\SS24Class\\JavaClass\\javaPro\\src\\days19\\Ex01.java";
+		String fileName = ".\\src\\days19\\Ex01.java";
 	    int lineNumber = 1;
 		int one = 0;
 		try (  FileReader fr = new FileReader(fileName);  ){	
