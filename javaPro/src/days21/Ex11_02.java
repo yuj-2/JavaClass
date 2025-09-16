@@ -60,7 +60,7 @@ public class Ex11_02 {
     	Date d = new Date(year-1900, month-1, date);
     	
     	System.out.println( today.toLocaleString() + " / " + d.toLocaleString() );
-    	System.out.println( today.getTime() + " / " + d.getTime() );
+    	System.out.println( today.getTime()/1000 + " / " + d.getTime()/1000 );
     			
     	return  today.equals(d) ;
 	}
