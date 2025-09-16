@@ -42,8 +42,16 @@ public class Ex10 {
 		
 		// 문제) 다음 주 수요일은 휴강 ?  2025-09-24
 		//      2025-09-16
-		
-		
+		// 문제) 다음 주 수요일은 휴강 ?  2025-09-24
+	      //      2025-09-16
+	      int dayOfWeek = d.getDayOfWeek().getValue();
+	      if (dayOfWeek < DayOfWeek.WEDNESDAY.getValue()) {
+	         d = d.plusWeeks(1);
+	      }
+	      System.out.println( d );
+	      
+	      d = d.with( TemporalAdjusters.next(DayOfWeek.WEDNESDAY)  );
+	      System.out.println( d );
 
 	}
 
