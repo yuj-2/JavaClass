@@ -49,7 +49,7 @@ public class Ex03_03 {
 	public static boolean isToday(Calendar c) {
 		Calendar today = Calendar.getInstance();
 		// 시,분,초,밀리초  절삭
-		today.set(Calendar.HOUR , 0);
+		today.set(Calendar.HOUR_OF_DAY , 0);
 		today.set(Calendar.MILLISECOND , 0);
 		today.set(Calendar.MINUTE , 0);
 		today.set(Calendar.SECOND , 0);
