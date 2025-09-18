@@ -11,6 +11,7 @@ import java.util.LinkedList;
 public class Ex11_02 {
 
 	public static void main(String[] args) {
+		// 큐 구조를 사용하지 않는다
 		LinkedList list = new LinkedList();
 		list.add(100);
 		list.add(200);
